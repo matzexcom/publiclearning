@@ -5,6 +5,7 @@ import { client } from "./client";
 import { PostList } from "./components/PostList";
 
 function App() {
+  console.log(process.env.REACT_APP_FAUNA_SECRET);
   return (
     <ApolloProvider client={client}>
       <div style={{ padding: "5px" }}>
